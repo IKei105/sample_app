@@ -127,3 +127,8 @@ input, textarea {
 input {
   height: auto !important;
 }
+
+/* app/assets/stylesheets/custom.scss */
+.dropdown-menu.active {
+  display: block;
+}
