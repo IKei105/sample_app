@@ -1,15 +1,11 @@
-# app/controllers/sessions_controller.rb
-
 class SessionsController < ApplicationController
-  
-  include SessionsHelper
-  
   def new; end
 
   def create
     user = User.find_by(email: params[:session][:email].downcase)
-    if user&.authenticate(params[:session][:password]) # ← ここ変更
+    if user && user.authenticate(params[:session][:password])
       reset_session
+      remember user
       log_in user
       redirect_to user
     else
