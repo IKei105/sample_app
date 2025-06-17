@@ -8,6 +8,7 @@ gem 'bootsnap',        '1.16.0', require: false
 gem 'bootstrap-sass',  '3.4.1'
 gem 'bootstrap-sass',  '3.4.1'
 gem 'concurrent-ruby', '1.3.4'
+gem 'faker',           '2.21.0'
 gem 'importmap-rails', '1.1.5'
 gem 'jbuilder',        '2.11.5'
 gem 'puma',            '5.6.8'
@@ -17,6 +18,8 @@ gem 'sprockets-rails', '3.4.2'
 gem 'sqlite3',         '1.6.1'
 gem 'stimulus-rails',  '1.2.1'
 gem 'turbo-rails',     '1.4.0'
+gem "will_paginate",           "3.3.1"
+gem "bootstrap-will_paginate", "1.0.0"
 
 group :development, :test do
   gem 'debug', '1.7.1', platforms: %i[mri mingw x64_mingw]
